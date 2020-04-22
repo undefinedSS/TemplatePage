@@ -1,0 +1,351 @@
+<!--&nbsp; (espacio en blanco)-->
+<!--<br> (salto de linea)-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- #region Configuracion basica -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- #endregion -->
+
+    <!-- #region Titulo que se vizualisa en la pestaña del navegador -->
+    <title>Bit Consulting</title>
+    <!-- #endregion -->
+
+    <!-- #region Importacion de los estilos CSS y BOOSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- #endregion -->
+
+    <!-- #region Importacion y configuracion de libreria JS para el efecto del SCROLL-->
+    <script src="js/smooth-scroll.min.js"></script>
+    
+    <script>
+      smoothScroll.init({
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+      speed: 800, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+      callback: function ( anchor, toggle ) {} // Function to run after scrolling
+      });
+    </script>
+    <!-- #endregion -->
+  </head>
+
+  <body>
+    
+    <!--#region Menu-->
+      <nav id="menu" class="navbar navbar-default navbar-inverse navbar-fixed-top ">
+        <div class="container-fluid Menu">
+          <div class="navbar-header">  
+            <a data-scroll class="navbar-brand MenuLogo" href="#Inicio">
+              <Img src="/resources/LogoNav.png"  width="150" height="65px"><!--Logo Menu-->
+            </a>
+            </br>
+            </br>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MenuContenedor" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button> 
+          </div>
+          <!--Botones del menu-->
+            <div class="collapse navbar-collapse MenuContenedor" id="MenuContenedor"> 
+              <ul class="nav navbar-nav navbar-right MenuBotones">
+              <li>
+                <a data-scroll href="#Nosotros" class="Item">
+                  <div class="MenuBoton">Nosotros</div>
+                </a>
+              </li>
+              <li>
+                <a data-scroll href="#Servicios" class="Item">
+                  <div class="MenuBoton">Servicios</div>
+                </a>
+              </li>
+              <li>
+                <a data-scroll href="#Clientes" class="Item">
+                  <div class="MenuBoton">Clientes</div>
+                </a>
+              </li>
+              <li>
+                <a data-scroll href="#Contactos" class="Item">
+                  <div class="MenuBotonContacto">Contacto</div>
+                </a>
+              </li>
+              </ul>
+            </div>
+          <!--Botones del menu-->
+        </div>
+      </nav>
+    <!-- #endregion Menu -->
+    
+    <!-- #region Imagen de la primer seccion-->
+      <div class="container-fluid Contenedor">
+        <div id="Inicio"class="row hidden-xs">
+          <div style="width: 100%; height: 90px; background-color: black;"></div>
+          <img src="/resources/FondoSec0.png" class="img-responsive"><!--IMAGEN 1920*1080-->
+        </div>
+        <div id="Inicio"class="row hidden-lg">
+          <div class="col-xs-12">
+          <div style="width: 100%; height: 90px; background-color: black;"></div>
+          <img src="/resources/FondoSec0Mobile.png" class="img-fluid"><!--IMAGEN 340*640-->
+          </div>
+        </div>
+      </div>
+    <!-- #endregion -->
+    
+    <!--#region CONTENEDOR PRINCIPAL DEL CONTENIDO-->
+    <div class="container">                                     
+    
+      <!-- #region Seccion Nosotros-->
+      
+        <!--#region titulo-->
+        <div id="Nosotros"class="row NosotrosTitle">
+          <div class="col-xs-12">
+            <h2>NOSOTROS</h2>
+          </div>
+        </div>
+        <!--#endregion titulo-->
+        
+        <!--#region contenido--> 
+        <div class="row NosotrosContenedorCards">
+          <div class="card-deck">
+
+            <!--#region Presentacion Nosotros-->
+            <h3 class="NosotrosContenedorCardsSubTitle">Saludo de presentación o texto explicativo o lo que se le antoje este es solo un texto de ejemplo supongo que con 250 caracteres estará bien     y si necesitan mas habrá que re configurar e ir viendo como queda pero para un resumen para mi basta y sobra.</h3>
+            <!--#endregion Presentacion Nosotros-->
+
+            <!--#region Tarjetas Nosotros-->
+              <div class="col-xs-12 col-lg-4">
+                <div class="card NosotrosCards">
+                  <img src="/resources/CardsTest.png"class="card-img-top img-fluid NosotrosImg" />
+                  <div class="NosotrosRedondelDecorativo"></div>               
+                  <div class="card-block">
+                    <h3 class="card-title">MISIÓN</h3>
+                    <p class="card-text"> Tesxto Generico  Tesxto Generico Tesxto Generico Tesxto Generico Tesxto Generico Tesxto Generico Tesxto Generico</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-lg-4">
+                <div class="card NosotrosCards">
+                  <img src="/resources/CardsTest.png" class="card-img-top img-fluid NosotrosImg" alt="...">             
+                  <div class="NosotrosRedondelDecorativo"></div>
+                  <div class="card-block">
+                    <h3 class="card-title">VISIÓN</h3>
+                    <p class="card-text">Tesxto Generico  Tesxto Generico Tesxto Generico Tesxto Generico Tesxto Generico Tesxto Generico Tesxto Generico</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-lg-4">
+                <div class="card NosotrosCards">
+                  <img src="/resources/CardsTest.png" class="card-img-top img-fluid NosotrosImg" alt="...">
+                  <div class="NosotrosRedondelDecorativo"></div>
+                  <div class="card-block">
+                    <h3 class="card-title">PLAN</h3>
+                    <p class="card-text"> Tesxto Generico  Tesxto Generico Tesxto Generico Tesxto Generico Tesxto Generico Tesxto Generico Tesxto Generico</p>
+                 </div>
+                </div>
+              </div>
+           <!--#endregion Tarjetas Nosotros-->
+          
+          </div>
+        </div>
+        <!--#endregion contenido-->
+
+      <!--#endregion Nosotros-->
+  
+      <!--#region Seccion Servicios-->
+      
+      <!--#region Titulo-->
+        <div id="Servicios"class="row ServiciosTitle">
+          <h2>SERVICIOS</h2>
+        </div>
+      <!--#endregion Titulo-->
+      
+      <!--#region Contenido-->
+
+        <div class="row ServiciosContenedorCards">
+          <!-- #region Tarjetas Servicios-->
+          <div class="row ServiciosCard">
+            <div class="card">
+              <div class="col-xs-12 col-lg-4 card-header border-0">
+                <img src="/resources/CardsTest.png" class="card-img-top img-fluid" alt="">
+              </div>
+              <div class="col-xs-12 col-lg-8 card-block px-2 ServiciosCardText">
+                <h4 class="card-title">Web</h4>
+                <p class="card-text">Texto de descripcion corta para cada especialidad Texto de descripcion corta para cada especialidad Texto de descripcion corta para cada   especialidad Texto de descripcion corta para cada especialidad </p>
+              </div>
+              <div class="w-100"></div>
+            </div>
+          </div>
+
+          <div class="row ServiciosCard">
+            <div class="card flex-row flex-wrap">
+              <div class="col-xs-12 col-lg-4 card-header border-0">
+                <img src="/resources/CardsTest.png" class="card-img-top img-fluid" alt="">
+              </div>
+              <div class="col-xs-12 col-lg-8 card-block px-2 ServiciosCardText">
+                <h4 class="card-title">Desktop</h4>
+                <p class="card-text">Texto de descripcion corta para cada especialidad Texto de descripcion corta para cada especialidad Texto de descripcion corta para cada   especialidad Texto de descripcion corta para cada especialidad </p>
+              </div>
+              <div class="w-100"></div>
+            </div>
+          </div>
+
+          <div class="row ServiciosCard">
+            <div class="card flex-row flex-wrap">
+              <div class="col-xs-12 col-lg-4 card-header border-0">
+                <img src="/resources/CardsTest.png" class="card-img-top img-fluid" alt="">
+              </div>
+              <div class="col-xs-12 col-lg-8 card-block px-2 ServiciosCardText">
+                <h4 class="card-title">Mobile</h4>
+                <p class="card-text">Texto de descripcion corta para cada especialidad Texto de descripcion corta para cada especialidad Texto de descripcion corta para cada   especialidad Texto de descripcion corta para cada especialidad </p>
+              </div>
+              <div class="w-100"></div>
+            </div>
+          </div>
+        <!-- #endregion Tarjetas Servicios-->
+
+        </div>
+      <!--#endregion Contenido-->
+
+    <!--#endregion Seccion Servicios-->
+        
+        
+      <!--#region Seccion Clientes-->
+      
+      <!--#region Titulo-->
+        <div id="Clientes"class="row ClientesTitle">
+          <h2>CLIENTES</h2>
+        </div>
+      <!--#endregion Titulo-->
+          
+      <!--#region Contenido-->      
+      
+        <!-- #region Tarjetas Clientes-->
+            <div class="row ClientesContenedorCards">   
+              <div class="card-deck  ">
+
+                <div class="col-xs-12 col-lg-4">
+                  <div class="card">
+                    <img src="/resources/CardsTest.png" class="card-img-top img-fluid ClientsLogo" alt="...">
+                    <div class="card-block ClientesCardText">
+                      <h3 class="card-title">Cliente Uno</h3>
+                      <p class="card-text">Tesxto Generico Tesxto Generico</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-lg-4">
+                  <div class="card">
+                    <img src="/resources/CardsTest.png" class="card-img-top img-fluid ClientsLogo" alt="...">
+                    <div class="card-block ClientesCardText">
+                      <h3 class="card-title">Cliente 2</h3>
+                      <p class="card-text">Tesxto Generico Tesxto Generico</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-lg-4">
+                  <div class="card">
+                    <img src="/resources/CardsTest.png" class="card-img-top img-fluid ClientsLogo" alt="...">
+                    <div class="card-block ClientesCardText">
+                      <h3 class="card-title ">Cliente 3</h3>
+                      <p class="card-text">Tesxto Generico Tesxto Generico</p>
+                    </div>
+                  </div>
+                </div>    
+              </div> 
+    
+            </div>
+        <!-- #region Tarjetas Clientes-->
+      <!--#endregion Contenido-->
+      <!--#endregion Clientes-->
+      
+      <!--#endregion Contenido-->
+    
+    <!--#endregion Clientes--> 
+            
+            
+      <!--#region Seccion Contacto-->
+      
+      <!--#region Titulo-->
+        <div id="Contactos" class="row ContactoTitle">
+          <h2>CONTACTO</h2>
+        </div>
+      <!--#endregion Titulo-->
+      
+      <!--#region Contenido-->
+        <div class="row ContactoContenedorCards">
+
+          <form action="/send-mail" method="POST">
+            
+            <!-- #region InputsTexto Contacto-->
+              <div class="form-group">
+
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Pedro Lopez" required>
+              
+                <label for="correo">Correo Electronico</label>
+                <input type="email" class="form-control" name="correo" id="correo" placeholder="name@example.com" required>
+              
+                <label for="asunto">Titulo</label>
+                <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto Mensaje" required>
+              
+              </div>
+            <!--#endregion InputsTexto Contacto-->
+
+            <!-- #region Tipo Contacto-->
+              <div class="form-group">
+                <label for="tipo">Tipo de Contacto</label>
+                <select class="form-control" name="tipo"id="tipo">
+                  <option>Consulta</option>
+                  <option>Reclamo</option>
+                  <option>Comentario</option>
+                </select>
+              </div>
+            <!-- #endregion Tipo Contacto-->
+
+            <!-- #region Mensaje y Enviar Contacto-->
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" name="mensaje" id="mensaje" rows="3" required></textarea>
+              </div>
+              <button id="EnviarMail" class="btn ">Enviar Mensaje</button>
+            <!-- #endregion Mensaje y Enviar Contacto--> 
+          
+          </form> 
+
+        </div>
+      <!--#endregion Contenido-->
+    <!--#endregion Contacto-->
+    
+    <!--#region Footer-->
+
+    <!--#endregion Footer-->
+    </div>
+    <!--#endregion CONTENEDOR PRINCIPAL DEL CONTENIDO-->
+    <div class="footer-copyright  text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> BitConsulting</a>
+    </div>
+    
+    <!-- #region Imports y funcion JQUERY para eliminar un "bug" en el navbar-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+      <script>
+      $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+      });
+      </script>
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"   crossorigin="anonymous"></script>
+      <!--#endregion-->
+  
+  </body>
+</html>
