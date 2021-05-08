@@ -16,7 +16,7 @@
     "ejs": "^3.0.1",
     "email-templates": "^2.0.1",
     "express": "^4.17.1",
-    "handlebars": "^4.0.2",
+    "handlebars": "^4.7.7",
     "morgan": "^1.9.1",
     "nodemailer": "^1.4.0"
   },
